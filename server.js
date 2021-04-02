@@ -13,8 +13,6 @@ connectDB();
 const app = express();
 
 //MIDDLEWARE
-// app.use(express.json());
-// app.use(express.urlencoded({ limit: '100mb', extended: true }));
 app.use(bodyParser.json({ limit: '200mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '200mb', extended: true }))
 app.use(cors());
